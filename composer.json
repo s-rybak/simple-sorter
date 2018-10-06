@@ -1,0 +1,17 @@
+{
+    "name": "sergej/dz",
+    "description": "Sorter",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sergey R",
+            "email": "qwe@qwe.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/"
+        }
+    }
+}
