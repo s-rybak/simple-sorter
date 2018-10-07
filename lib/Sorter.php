@@ -2,25 +2,20 @@
 
 namespace Lib;
 
-class Sorter
-{
+final class Sorter {
 
 	private $data;
 
-	const ASC = 'asc';
-	const DESC = 'desc';
-
-	public function __construct($data){
+	public function __construct($data) {
 
 		$this->data = $data;
 
 	}
 
-	public function sort($ascDesc = 'asc'){
+	public function useStandartSorter(){
 
-		return $ascDesc == 'asc' ?
-			( \sort($this->data) ? $this->data : $this->data) :
-			( \rsort($this->data) ? $this->data : $this->data);
+		return new StandartSorter($this->data);
 
 	}
+
 }
