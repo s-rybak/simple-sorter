@@ -2,7 +2,7 @@
 
 namespace Lib;
 
-final class Sorter {
+final class SorterFactory {
 
 	private $data;
 
@@ -12,7 +12,7 @@ final class Sorter {
 
 	}
 
-	public function useStandartSorter(){
+	public function createStandartSorter(){
 
 		return new StandartSorter($this->data);
 
