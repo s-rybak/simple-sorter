@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Sorter factory class
+ *
+ * created sorters object
+ *
+ * @author  Sergey R <qwe@qwe.com>
+ */
 namespace Lib;
 
 final class SorterFactory
