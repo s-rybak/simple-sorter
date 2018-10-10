@@ -2,12 +2,11 @@
 
 namespace Lib;
 
-interface SorterInterface {
+interface SorterInterface
+{
+    public function setSortOrder(string $ascDesc): SorterInterface;
 
-	public function setSortOrder($ascDesc);
+    public function sort(): array;
 
-	public function sort();
-
-	public function __construct($data);
-
+    public function __construct(array $data);
 }

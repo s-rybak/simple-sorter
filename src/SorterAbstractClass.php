@@ -4,31 +4,26 @@ namespace Lib;
 
 abstract class SorterAbstractClass implements SorterInterface
 {
+    protected $data;
+    protected $sortOrder;
 
-	protected $data;
-	protected $sortOrder;
+    const ASC = 'asc';
+    const DESC = 'desc';
 
-	const ASC = 'asc';
-	const DESC = 'desc';
+    public function __construct(array $data)
+    {
+        $this->data = $data;
+    }
 
-	public function __construct($data){
+    public function setSortOrder(string $ascDesc): SorterInterface
+    {
+        $this->sortOrder = $ascDesc;
 
-		$this->data = $data;
+        return $this;
+    }
 
-	}
-
-	public function setSortOrder($ascDesc){
-
-		$this->sortOrder = $ascDesc;
-
-		return $this;
-
-	}
-
-	public function sort(){
-
-		return $this->data;
-
-	}
-
+    public function sort(): array
+    {
+        return $this->data;
+    }
 }

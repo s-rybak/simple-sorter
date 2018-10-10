@@ -9,9 +9,12 @@
         }
     ],
     "require": {},
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.13"
+    },
     "autoload": {
         "psr-4": {
-            "Lib\\": "lib/"
+            "Lib\\": "src/"
         }
     }
 }
