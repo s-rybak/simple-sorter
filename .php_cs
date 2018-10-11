@@ -2,7 +2,9 @@
 
 use PhpCsFixer\Finder;
 
-$finder = Finder::create()->in( __DIR__ . "/src" );
+$finder = Finder::create()
+                    ->in( __DIR__ . "/src" )
+                    ->in( __DIR__ . "/bin" );
 
 return \PhpCsFixer\Config::create()
                          ->setFinder($finder)

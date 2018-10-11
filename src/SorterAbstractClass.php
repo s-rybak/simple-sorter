@@ -13,8 +13,8 @@ abstract class SorterAbstractClass implements SorterInterface
     protected $data;
     protected $sortOrder;
 
-    const ASC = 'asc';
-    const DESC = 'desc';
+    public const ASC = 'asc';
+    public const DESC = 'desc';
 
     public function __construct(array $data)
     {
